@@ -11,6 +11,7 @@ import { FcNext, FcPrevious  } from "react-icons/fc";
 
 import { Navigation } from 'swiper/modules';
 import ServicesData from '../dummyApi/ServicesData';
+
 const ServicesSlider = () => {
     return (
         <>

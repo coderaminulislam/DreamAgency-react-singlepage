@@ -1,12 +1,13 @@
 import React from 'react';
 import quote from '../assets/images/quote.svg'
 import testimonialData from '../dummyApi/TestimonialData';
-
+import { motion } from "framer-motion";
+import{fadeIn} from '../variants'
 const Testimonial = () => {
     return (
         <section className='py-16 px-8'>
             <div className="max-w-5xl mx-auto">
-                <h2 className='text-5xl text-center leading-1.2'><span className='font-black'>Our Testimonials</span><br/> What Our Clients Are <span className='relative title_bottom_border'>Saying</span></h2>
+                <motion.h2 variants={fadeIn('up', 0.3)} initial="hidden" whileInView={"show"} viewport={{once:false, amount:0.7}} className='text-5xl text-center leading-1.2'><span className='font-black'>Our Testimonials</span><br/> What Our Clients Are <span className='relative title_bottom_border'>Saying</span></motion.h2>
 
                 <div className="testimonai_cards flex-col flex md:flex-row gap-14 mt-14">
                     {
