@@ -70,7 +70,6 @@ span.title_bottom_border::after {
     height: 3px;
     left: 0;
     top: 50%;
-    transform: translateY(50);
     bottom: 0;
     background-color: #fdc221;
 }
